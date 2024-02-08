@@ -1,17 +1,50 @@
 /*----------------------------------------------------------------------------
     Generic
 ----------------------------------------------------------------------------*/
+html {
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
 
 
 /*------------------------------------------------------------------------------
    Element - Base
 ------------------------------------------------------------------------------*/
 
+.wrapper {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+
+body {
+   font-family: 'Dosis', sans-serif;
+   font-family: 'Roboto', sans-serif;
+   
+}
 
 
 /*------------------------------------------------------------------------------
    Element - Typographie
 ------------------------------------------------------------------------------*/
+h1 {
+   font-size: 43px;
+   color: #000000;
+  
+}
+
+h2 {
+   font-size: 36px;
+   color: #000000;
+}
+
+h3 {
+   font-size: 24px;
+   color: #000000;
+}
 
 
 
@@ -21,7 +54,60 @@
 
 /* header */
 
+header {
+   background-color: #FFFFFF;
+   padding-top: 36px;
+   padding-bottom: 36px;
+}
+
+
+header .wrapper{
+
+   display: flex;
+
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo{
+   display: flex;
+   align-items: center;
+}
+
+
+.menu{
+   display: flex;
+   justify-content: flex-end;
+   gap: 30px;
+   list-style: none;
+   
+   
+}
+
+a{
+   text-decoration: none;   
+   padding: 10px 10px 4px 4px; 
+   color: #000000;
+   
+}
+
+
+
+
+.menu a:hover{
+
+   background-color: #0E5EA1;
+   border-radius: 5px;
+   color: #FFFFFF;
+  
+   
+}
+
+
 /* Section */
 
+.hero{
+background-image: url(../images/montagnes-alpes.jpg);
+}
 
 /* footer */
